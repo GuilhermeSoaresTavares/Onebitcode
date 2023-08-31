@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header,footer{
@@ -22,6 +25,7 @@ header a, footer a{
     color: #FFF;
     text-decoration: none;
     font-size: 18px;
+    cursor: pointer;
 
 }
 header img,footer img{
@@ -57,23 +61,30 @@ div.title p{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px
+    gap: 10px;
+    grid-area: main;
 
 }
 
 .card{
-    max-width: 300px;
-    margin-bottom: 25px;
+    width: 280px;
+    height: 380px;
     transition: 0.8s;
     border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
 }
 .card:hover{
-    border:1px solid #333;
+    border-color: #333;
 }
 
 .card img,aside img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 180px;
     border-radius: 10px;
 }
 
@@ -82,15 +93,30 @@ div.title p{
 }
 
 aside{
-    padding: 10px;
+    padding:25px 15px;
     background-color: #555;
     color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: aside;
 }
 
 h3.aside{
     font-weight: 300;
-    margin-bottom:10px
+    margin-bottom:10px;
+}
+
+.card-aside{
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.card-aside:hover{
+    border-color: #DDD;
 }
 
 aside img{
@@ -116,25 +142,35 @@ aside h3{
         flex-wrap: wrap;
     }
 
+    .container main{
+        justify-content: space-evenly;
+    }
+
 }
 
-@media (min-width:1260px) {
-    .container main{
-        grid-area: main;
-    }
+@media (min-width:1293px) {
 
     .container aside{
         gap: 10px;
-        grid-area: aside;
     }
     .container{
+        padding: 20px;
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: 
-        "main main main main main main main main main aside aside aside";
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "main  aside";
+        column-gap: 25px;
+        flex:1 0 auto;
     }    
 
 }
+
+@media (min-width:1291px) {
+    .container main{
+        justify-content: space-between;
+    }
+
+}
+
 
 /* @media (min-width:1500px) {
     .container{
@@ -143,7 +179,7 @@ aside h3{
         "main main main main main aside aside";
     }  
 
-} */
+} 
 
 @media (min-width:1500px) {
     .container{
@@ -152,3 +188,4 @@ aside h3{
         "main main main main main main main main main aside aside aside ";
     }  
 }
+*/
