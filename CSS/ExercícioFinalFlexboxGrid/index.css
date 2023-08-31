@@ -170,22 +170,3 @@ aside h3{
     }
 
 }
-
-
-/* @media (min-width:1500px) {
-    .container{
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-areas: 
-        "main main main main main aside aside";
-    }  
-
-} 
-
-@media (min-width:1500px) {
-    .container{
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: 
-        "main main main main main main main main main aside aside aside ";
-    }  
-}
-*/
