@@ -1,0 +1,21 @@
+.square {
+  background-color: #222;
+  padding: 25px;
+}
+.square h1 {
+  color: #DDD;
+  font-size: 22px;
+  font-family: Arial;
+}
+.square h2 {
+  color: #DDD;
+  font-size: 18px;
+  font-family: Arial;
+}
+.square p {
+  color: #DDD;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+/*# sourceMappingURL=styles.css.map */

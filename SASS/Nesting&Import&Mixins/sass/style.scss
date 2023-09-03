@@ -1,0 +1,17 @@
+@import 'colors/colors.scss', 'mixins/mixins.scss';
+
+
+.square{
+    background-color: $primary-color;
+    padding: 25px;
+    h1{
+        @include text-style($secondary-color,22px,Arial)
+    }
+    h2{
+        @include text-style($secondary-color,18px,Arial)
+    }
+    p{
+        @include text-style($secondary-color,16px,Arial)
+    }
+
+}
