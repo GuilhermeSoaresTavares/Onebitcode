@@ -22,25 +22,12 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
 
-    align-items: center;
-    justify-content: left;
+    align-items: center; 
 }
+
 
 .section1{
-    background-image: url(../images/home/01.jpg);
     margin-top: -95px;
-}
-
-.section2{
-    background-image: url(../images/home/03.jpg);
-}
-
-.section3{
-    background-image: url(../images/home/02.gif);
-}
-
-.section4{
-    background-image: url(../images/home/04.jpg);
 }
 
 .upTitle{
@@ -50,6 +37,25 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: #111;;
+}
+
+section.cta{
+    height: 75vh;
+    background-color: #000;
+
+    align-items: center;
+    justify-content: center;
+}
+
+section.cta{
+    font-size: 0.8rem;
+}
+
+section.cta .container p a{
+    color:  #b9b9b9;
+}
+.cta-buttons{
+    gap: 1rem;
 }
 
 footer a{
